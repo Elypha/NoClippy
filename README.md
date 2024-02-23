@@ -10,14 +10,14 @@ By using the version I forked you will get:
   - Option to disable report for encounters shorter than a configurable seconds (by default `30`)
   - Option to use `seconds`, or `minute:seconds` for encounter total time in the report
 
-# installation instructions
+# Installation instructions
 
 Choose one from the below
 
 - Add the following url as a custom repo source
 
 ```
-..
+https://raw.githubusercontent.com/Elypha/NoClippy/master/release.json
 ```
 
 - Download `latest.zip` from release and load it as a dev plugin
