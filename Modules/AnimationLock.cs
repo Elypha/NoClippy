@@ -226,7 +226,7 @@ namespace NoClippy.Modules
             {
                 ImGui.Columns(2, null, false);
 
-                if (ImGui.Checkbox("Enable Logging", ref Config.EnableLogging))
+                if (ImGui.Checkbox("Enable Debug Logging", ref Config.EnableLogging))
                     Config.Save();
 
                 ImGui.NextColumn();

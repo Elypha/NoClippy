@@ -1,9 +1,23 @@
-Reduces the effects of lag on certain aspects of the game, such as weaving and statuses.
+# Introduction
 
-Helps with weaving in a similar way to [XivAlexander](https://github.com/Soreepeong/XivAlexander) except without ping or opcodes.
-If you use both, the animation lock compensation feature will automatically disable itself to prevent cheating.
-However, other features may freely be used at the same time.
+Checkout the original [NoClippy](https://github.com/UnknownX7/NoClippy) repo for information from the original author.
 
-For use with [FFXIVQuickLauncher](https://github.com/goatcorp/FFXIVQuickLauncher).
+By using the version I forked you will get:
 
-For installation instructions, please see my [custom plugin repository](https://github.com/UnknownX7/DalamudPluginRepo).
+- Option to  enable/disable live `GCD clipped` output separately
+- Option to  enable/disable live `GCD wasted` output separately
+- Option to  enable/disable `report` output after a combat separately
+  - Option to disable report for encounters shorter than a configurable seconds (by default `30`)
+  - Option to use `seconds`, or `minute:seconds` for encounter total time in the report
+
+# installation instructions
+
+Choose one from the below
+
+- Add the following url as a custom repo source
+
+```
+..
+```
+
+- Download `latest.zip` from release and load it as a dev plugin
