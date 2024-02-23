@@ -44,9 +44,10 @@ namespace NoClippy.Modules
 
         private void EndEncounter()
         {
+            var span = DateTime.Now - begunEncounter;
+            begunEncounter = DateTime.MinValue;
             if (NoClippy.Config.EnableEncounterStatsLoggingReport)
             {
-                var span = DateTime.Now - begunEncounter;
                 if (span.TotalSeconds < NoClippy.Config.EnableEncounterStatsLoggingReportMinSeconds) return;
                 if (encounterTotalClip == 0 && encounterTotalWaste == 0) return;
 
@@ -55,7 +56,6 @@ namespace NoClippy.Modules
                     $"{Math.Floor(span.TotalMinutes):00}m{span.Seconds:00}s";
                 NoClippy.PrintLog($"in {formattedTime}, clipped: {encounterTotalClip:0.00}, wasted: {encounterTotalWaste:0.00}");
             }
-            begunEncounter = DateTime.MinValue;
         }
 
         private unsafe void DetectClipping()
